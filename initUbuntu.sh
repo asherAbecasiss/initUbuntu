@@ -9,6 +9,7 @@ apt-get upgrade -y & wait $!
 apt-get install ffmpeg -y & wait $!
 apt install nfs-kernel-server -y & wait $!
 apt-get install net-tools -y & wait $!
+apt install openssh-server -y & wait $!
 
 
 apt-get install ca-certificates curl gnupg -y & wait $!
