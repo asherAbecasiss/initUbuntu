@@ -8,10 +8,10 @@ apt-get update -y & wait $!
 apt-get upgrade -y & wait $!
 apt-get install ffmpeg -y & wait $!
 apt install nfs-kernel-server -y & wait $!
+apt-get install net-tools -y & wait $!
 
 
-
-apt-get install ca-certificates curl gnupg-y & wait $!
+apt-get install ca-certificates curl gnupg -y & wait $!
 install -m 0755 -d /etc/apt/keyrings  & wait $!
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg & wait $!
 chmod a+r /etc/apt/keyrings/docker.gpg
