@@ -37,6 +37,8 @@ apt install ./anydesk.deb & wait $!
 
 
 apt install docker-compose -y & wait $!
+apt install golang -y & wait $!
+
 
 echo "To Do!"
 echo "aws configure"
