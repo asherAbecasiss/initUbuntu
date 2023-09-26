@@ -10,6 +10,7 @@ apt-get install ffmpeg -y & wait $!
 apt install nfs-kernel-server -y & wait $!
 apt-get install net-tools -y & wait $!
 apt install openssh-server -y & wait $!
+apt-get install golang -y & wait $!
 
 
 apt-get install ca-certificates curl gnupg -y & wait $!
@@ -32,12 +33,11 @@ unzip awscliv2.zip & wait $!
 curl "https://downloads.mongodb.com/compass/mongodb-compass_1.36.4_amd64.deb" -o "mongodb-compass.deb" & wait $!
 apt install ./mongodb-compass.deb & wait $!
 
-curl "https://anydesk.com/en/downloads/linux?dv=deb_64" -o "anydesk.deb" & wait $!
-apt install ./anydesk.deb & wait $!
+
 
 
 apt install docker-compose -y & wait $!
-apt install golang -y & wait $!
+
 
 
 echo "To Do!"
