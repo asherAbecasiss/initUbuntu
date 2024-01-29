@@ -11,6 +11,9 @@ apt install nfs-kernel-server -y & wait $!
 apt-get install net-tools -y & wait $!
 apt install openssh-server -y & wait $!
 apt-get install golang -y & wait $!
+apt-get install ncdu -y & wait $!
+apt-get install btop -y & wait $!
+
 
 
 apt-get install ca-certificates curl gnupg -y & wait $!
@@ -29,11 +32,6 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip & wait $!
 
 ./aws/install & wait $!
-
-curl "https://downloads.mongodb.com/compass/mongodb-compass_1.36.4_amd64.deb" -o "mongodb-compass.deb" & wait $!
-apt install ./mongodb-compass.deb & wait $!
-
-
 
 
 apt install docker-compose -y & wait $!
